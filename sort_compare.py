@@ -164,9 +164,12 @@ def main():
             iter_count -= 1
 
         print "List of %s length the test timed:" % test
-        print "Insertion Sort took %10.7f seconds to run on average" % (output['insert'] / 100)
-        print "Shell Sort took %10.7f seconds to run on average" % (output['shell'] / 100)
-        print "Python Sort took %10.7f seconds to run on average" % (output['pyth'] / 100)
+        print "Insertion Sort took %10.7f seconds to run on average" % \
+              (float(output['insert'] / 100))
+        print "Shell Sort took %10.7f seconds to run on average" % \
+              (float(output['shell'] / 100))
+        print "Python Sort took %10.7f seconds to run on average" % \
+              (float(output['pyth'] / 100))
         print '\n'
 
 if __name__ == '__main__':
