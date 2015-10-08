@@ -215,9 +215,13 @@ def main():
             iter_count -= 1
 
         print "List of %s length the test timed:" % test
-        print "Sequential took %10.7f seconds to run on average" % (float(output['seq']/ 100))
-        print "Ordered Seq took %10.7f seconds to run on average" % (float(output['ord_seq'] / 100))
-        print "Binary Iter took %10.7f seconds to run on average" % (float(output['bin_iter']/ 100))
+
+        print "Sequential took %10.7f seconds to run on average" % \
+              (float(output['seq']/ 100))
+        print "Ordered Seq took %10.7f seconds to run on average" % \
+              (float(output['ord_seq'] / 100))
+        print "Binary Iter took %10.7f seconds to run on average" % \
+              (float(output['bin_iter']/ 100))
         print "Binary Recur took %10.7f seconds to run on average" % \
         (float(output['bin_recur']/ 100))
         print '\n'
