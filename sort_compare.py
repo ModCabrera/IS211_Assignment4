@@ -171,4 +171,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    list = random_gen(100)
